@@ -1,0 +1,142 @@
+@font-face {
+	src: url("../assets/fonts/abel-regular.ttf");
+	font-family: "Abel";
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: 2px 2px 0 green;
+}
+
+button:active {
+	box-shadow: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: Abel, monospace;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
+.page-index {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.page-index > .title {
+	margin-bottom: 1rem;
+	color: green;
+}
+
+.page-index .button {
+	font-size: 1.25rem;
+	color: green;
+	border: 1px solid green;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+}
+
+.page-collection {
+	padding: 2rem;
+}
+
+.page-collection > .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	color: green;
+}
+
+.page-collection > .title {
+	color: green;
+	margin-bottom: 4rem;
+}
+
+.card-plant {
+	border: 1px solid green;
+	border-radius: 4px;
+	padding: 1rem;
+}
+
+.card-plant > .image {
+	height: 150px;
+	object-fit: cover;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.card-plant > .label {
+	color: grey;
+	font-size: 0.75rem;
+	margin-bottom: 0.25rem;
+}
+
+.card-plant > .plant-scientific-name {
+	margin-bottom: 1rem;
+}
+
+.card-plant.not-collected {
+	border-color: grey;
+}
+
+.card-plant.not-collected > .image {
+	filter: grayscale(1);
+}
+
+.page-collection > .list-plants {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+}
+
+.page-collection .list-plant-names {
+	list-style: none;
+}
+
+@media screen  and (min-width: 600px) {
+	.page-collection > .list-plants {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media screen  and (min-width: 768px) {
+	.page-collection > .list-plants {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen  and (min-width: 1024px) {
+	.page-collection > .list-plants {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}

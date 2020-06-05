@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;
+  &lt;Assembly Path="/Users/luke/.nuget/packages/plant.net/1.0.0-beta/lib/netstandard2.1/Plant.NET.dll" /&gt;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=220ca11e_002D9ac9_002D48b9_002Da14b_002Dee47caf6e971/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="IdentifyPlant_WhenPlantCanBeIdentified_ThenReturnsListOfPlantsCommonNames" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::79CE029F-7DFB-4C75-88FE-F8938F8D31C1::.NETCoreApp,Version=v3.1::Natura.Tests.Integration.PlantIdentificationControllerTest.IdentifyPlant_WhenPlantCanBeIdentified_ThenReturnsListOfPlantsCommonNames&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8915fb6_002D8e34_002D4be2_002Dbc68_002D8aa14c107eae/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="False" ContinuousTestingMode="0" FrameworkVersion="{x:Null}" IsLocked="False" Name="IdentifyPlant_WhenPlantCanBeIdentified_ThenReturnsListOfPlantsCommonNames #2" PlatformMonoPreference="{x:Null}" PlatformType="{x:Null}" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::79CE029F-7DFB-4C75-88FE-F8938F8D31C1::.NETCoreApp,Version=v3.1::Natura.Tests.Integration.PlantIdentificationControllerTest.IdentifyPlant_WhenPlantCanBeIdentified_ThenReturnsListOfPlantsCommonNames&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

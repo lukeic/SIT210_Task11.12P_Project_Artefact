@@ -1,0 +1,60 @@
+@page
+@using System.Linq
+@using System.Text.RegularExpressions
+@using System.Threading
+@model Natura.Server.Pages.Collection
+
+@{
+	ViewData.Add("PageName", "collection");
+}
+
+<header class="header">
+	<p class="logo">
+		Natura
+	</p>
+	<p>
+		@User.GetEmail()
+	</p>
+</header>
+
+<h1 class="title">
+	Plant Collection
+</h1>
+
+<section class="list-plants">
+	@foreach (var (plant, image) in Model.PlantsWithImages)
+	{
+		<div class="card-plant @(Model.HasCollectedPlant(plant) ? "collected" : "not-collected")">
+			@if (image != null)
+			{
+				<img src="@image.Url"
+				     alt="An image of a plant named @(plant.CommonNames.FirstOrDefault() ?? plant.ScientificName). Photo created by @image.Creator and published by @image.Publisher."
+				     class="image">
+			}
+			<p class="label">
+				Scientific Name
+			</p>
+			<p class="plant-scientific-name">
+				@(Model.HasCollectedPlant(plant)
+					? plant.ScientificName
+					: new Regex(@"\w", RegexOptions.IgnoreCase).Replace(plant.ScientificName, "x"))
+			</p>
+			@if (plant.CommonNames.Any())
+			{
+				<p class="label">
+					Common Names
+				</p>
+				<ul class="list-plant-names">
+					@foreach (var name in plant.CommonNames)
+					{
+						<li>
+							@(Model.HasCollectedPlant(plant)
+								? @Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(name)
+								: new Regex(@"\w", RegexOptions.IgnoreCase).Replace(name, "x"))
+						</li>
+					}
+				</ul>
+			}
+		</div>
+	}
+</section>

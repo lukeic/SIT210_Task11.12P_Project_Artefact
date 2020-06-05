@@ -1,0 +1,1 @@
+GET https://localhost:5001/api/identify?image=https://static.inaturalist.org/photos/60958843/original.jpg?1581008246
